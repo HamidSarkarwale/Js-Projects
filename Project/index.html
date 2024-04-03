@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <Title>Baby Calculator</Title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                text-align: center;
+            }
+            input{
+                width:90px;
+            }
+            button{
+                color: black;
+            }
+        </style>
+
+    </head>
+    <body style="background-color: bisque;">
+        <h1>A fun calculator for toddlers.</h1>
+        <h2>It makes toddlers good at calculation.</h2>
+        <h3>Symbols     &emsp; &emsp;&emsp;    Description </h3>
+        <h4>
+            &ensp; +           &emsp;  ----------------> Addition        <br/>
+            &ensp;&ensp;&emsp;&ensp; -           &emsp;  ----------------> Substraction    <br/>
+            &ensp; x           &emsp;  ----------------> Multiply        <br/>
+            &ensp; /           &emsp;  ----------------> Division         
+        </h4> 
+
+        <div id="demo">
+            <input id="fnum" type="number" placeholder="Enter operand"> 
+             
+            <select id="operation">
+                <option value="1">+</option>
+                <option value="2">-</option>
+                <option value="3">/</option>
+                <option value="4">x</option> </select>
+
+            <input id="snum" type="number" placeholder="Enter operand"> 
+            <button onclick="calculate()">=</button>
+            <input id="total" type="input">
+
+            <h3>To start and stop running background colors press buttons.</h3>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            
+        </div>
+
+        <script src="./index.js" >
+
+        </script>
+
+
+
+    </body>
+</html>
